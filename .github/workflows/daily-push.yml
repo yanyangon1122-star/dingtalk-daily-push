@@ -21,4 +21,5 @@ jobs:
       - name: Run daily push
         env:
           DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+          USER_BAZI: "甲戌年 乙亥月 壬子日 甲辰时"
         run: python push.py
